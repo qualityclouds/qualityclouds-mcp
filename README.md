@@ -64,4 +64,4 @@ Add to `.cursor/mcp.json`:
 - Product: [qualityclouds.ai/hub](https://qualityclouds.ai/hub)
 - Community, docs and support: [github.com/qualityclouds/community](https://github.com/qualityclouds/community/discussions)
 
-Built by [Quality Clouds](https://qualityclouds.ai), the AI Code Governance platform, governing 950+ enterprise platform instances since 2015.
+Built by [Quality Clouds](https://qualityclouds.ai), the AI Code Governance platform, governing 950+ enterprise platform instances since 2017.
