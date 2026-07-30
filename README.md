@@ -1,9 +1,9 @@
 <!-- mcp-name: ai.qualityclouds/hub -->
-# Quality Clouds Hub MCP Server
+# Norma MCP Server
 
 AI code governance rules injected into Cursor, Claude Code and other MCP clients at generation time.
 
-Quality Clouds Hub connects your AI development tool to a governance rule library built around the error patterns AI-generated code typically contains. When the model generates code, the rules for your detected stack are already in its context, so the output follows them from the first line.
+Norma connects your AI development tool to a governance rule library built around the error patterns AI-generated code typically contains. When the model generates code, the rules for your detected stack are already in its context, so the output follows them from the first line.
 
 - Remote server (Streamable HTTP): `https://api.qualityclouds.ai/mcp`
 - Auth: API key, generated in one click at [portal.qualityclouds.ai](https://portal.qualityclouds.ai). Permanent free tier.
@@ -30,7 +30,7 @@ Every session produces a structured record of what was checked, fixed and preven
 2. Add the server:
 
 ```bash
-claude mcp add --scope user --transport http qualityclouds-hub https://api.qualityclouds.ai/mcp \
+claude mcp add --scope user --transport http norma https://api.qualityclouds.ai/mcp \
   --header "Authorization: Bearer <your-api-key>"
 ```
 
@@ -40,7 +40,7 @@ claude mcp add --scope user --transport http qualityclouds-hub https://api.quali
 claude mcp list
 ```
 
-4. Open a session in any repo and ask Claude Code to review a file against your coding standards. It will detect the Hub server, fetch the rules for your stack, and register the results back to your workspace.
+4. Open a session in any repo and ask Claude Code to review a file against your coding standards. It will detect the Norma server, fetch the rules for your stack, and register the results back to your workspace.
 
 ## Cursor
 
@@ -49,7 +49,7 @@ Add to `.cursor/mcp.json`:
 ```json
 {
   "mcpServers": {
-    "qualityclouds-hub": {
+    "norma": {
       "url": "https://api.qualityclouds.ai/mcp",
       "headers": { "Authorization": "Bearer <your-api-key>" }
     }
